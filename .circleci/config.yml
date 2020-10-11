@@ -29,9 +29,13 @@ jobs:
       # run tests!
       - run: npm run test
 
+      - run: npm run build
+
+      - run: npm run test:coverage
+
       - codecov/upload:
           file: './coverage/clover.xml'
 
-      - run: npm run build
+      # - run: npm run upload:test-report
 
       - run: npm run netlify:deploy
