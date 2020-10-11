@@ -34,7 +34,7 @@ jobs:
       - run: npm run test:coverage
 
       - codecov/upload:
-        file: './coverage/clover.xml'
+          file: './coverage/clover.xml'
 
       - run: npm run upload:test-report
 
