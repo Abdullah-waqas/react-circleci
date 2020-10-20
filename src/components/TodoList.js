@@ -53,7 +53,7 @@ const ToDoList = () => {
         ))}
       </div>
       <AddTaskForm addTask={addTask} />
-      <button onClick={() => cancelTask(index)}>cancel</button>
+      <button onClick={() => cancelTask()}>cancel</button>
     </div>
   );
 };
