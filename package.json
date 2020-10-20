@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "codecov": "^3.8.0",
+    "cross-env": "^7.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -16,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:coverage": "npm test -- --env=jsdom --coverage",
+    "test:coverage": "cross-env CI=true npm test -- --env=jsdom --coverage",
     "upload:test-report": "./node_modules/.bin/codecov --token=CODECOV_TOKEN_1",
     "netlify:deploy": "netlify deploy --dir=./build -p -m \"$(git log -1 --pretty=%B)\""
   },
@@ -37,5 +38,10 @@
   },
   "devDependencies": {
     "netlify-cli": "^2.65.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**.js"
+    ]
   }
 }
