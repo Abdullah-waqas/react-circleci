@@ -1,4 +1,9 @@
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<a href="https://codecov.io/gh/Abdullah-waqas/react-circleci">
+  <img src="https://codecov.io/gh/Abdullah-waqas/react-circleci/branch/main/graph/badge.svg?token=WHY37CWG9Q"/>
+</a>
 
 ## Available Scripts
 
