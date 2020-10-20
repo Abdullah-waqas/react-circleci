@@ -27,11 +27,6 @@ const ToDoList = () => {
     newTasks.splice(index, 1);
     setTasks(newTasks);
   };
-
-  const cancelTask = () => {
-    console.log("cancel");
-  };
-
   return (
     <div className="todo-list">
       <h5>Todo list Application</h5>
@@ -53,7 +48,6 @@ const ToDoList = () => {
         ))}
       </div>
       <AddTaskForm addTask={addTask} />
-      <button onClick={() => cancelTask()}>cancel</button>
     </div>
   );
 };
