@@ -38,4 +38,4 @@ jobs:
 
       # - run: npm run upload:test-report
 
-      - run: npm run netlify:deploy
+      # - run: npm run netlify:deploy

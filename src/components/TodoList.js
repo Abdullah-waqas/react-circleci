@@ -27,7 +27,6 @@ const ToDoList = () => {
     newTasks.splice(index, 1);
     setTasks(newTasks);
   };
-
   return (
     <div className="todo-list">
       <h5>Todo list Application</h5>
